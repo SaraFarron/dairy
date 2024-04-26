@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+fastui = "*"
+sqlalchemy = "*"
+pytest = "*"
+httpx = "*"
+async-asgi-testclient = "*"
+uvicorn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
