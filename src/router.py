@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from fastapi.responses import HTMLResponse
 from fastui import FastUI, prebuilt_html
 
-from src.ui import dairy_page
+from src.ui import dairy_page, home_page
 
 router = APIRouter()
 
@@ -12,7 +12,7 @@ async def main_page():
     """
     Main page of the app.
     """
-    return dairy_page()
+    return dairy_page(home_page(), title="Dairy")
 
 
 @router.get("/{path:path}")
